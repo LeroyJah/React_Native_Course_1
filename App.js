@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={{flex: 1}}>
         <Text style={{margin: 16, padding: 40, borderWidth: 2, backgroundColor: 'white'}}>Greetings Master Jah. 😀Open up App.js to start working on your app!</Text>
       </View>
@@ -12,7 +12,7 @@ export default function App() {
       <View style={{flex: 3, backgroundColor: 'powderblue'}}>
         <Button title='Tensorflow.js'/>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -24,3 +24,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'steelblue'
   },
 });
+
+const Cat = () => {
+  const name = 'Maru';
+  return <Text style={{margin: 20}}>Hello, I am {name}!</Text>;
+};
+
+export default Cat;
