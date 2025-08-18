@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 
 const App = () => {
   return (
@@ -25,9 +25,27 @@ const styles = StyleSheet.create({
   },
 });
 
-const Cat = () => {
-  const name = 'Maru';
-  return <Text style={{margin: 20}}>Hello, I am {name}!</Text>;
+const Cat = (props) => {
+  return(
+    <View>
+      <Image
+        source={{uri: 'https://cdnb.artstation.com/p/assets/images/images/018/469/985/large/ksop-sanji-psd2-da.jpg?1559513757'}}
+        style={{width: 100, height: 100}}
+      />
+      <Text style={{margin: 20}}>Hello, I am {props.name}!</Text>
+    </View>
+  )
 };
 
-export default Cat;
+const Cafe = () => {
+  return (
+    <View>
+      <Text>Pepsi</Text>
+      <Cat name="hanma"/>
+      <Cat name="baki"/>
+      <Cat name="ippo"/>
+    </View>
+  )
+}
+
+export default Cafe;
