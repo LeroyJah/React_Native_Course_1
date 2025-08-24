@@ -1,18 +1,14 @@
-import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView, Image, TextInput } from 'react-native';
 
 const App = () => {
   return (
-    <ScrollView style={styles.container}>
-      <View style={{flex: 1}}>
-        <Text style={{margin: 16, padding: 40, borderWidth: 2, backgroundColor: 'white'}}>Greetings Master Jah. 😀Open up App.js to start working on your app!</Text>
+    <View style={styles.container}>
+        <Text style={{flex: 6, backgroundColor: 'white'}}>Greetings 😀</Text>
+        <Text style={{flex: 6, backgroundColor: 'skyblue'}}>Hello again!</Text>
+      <View>
+        <Button title='Tensorflow.js' style={{flex:6, backgroundColor: 'powderblue'}}/>
       </View>
-      <View style={{flex: 2, backgroundColor: 'skyblue'}}>
-        <Text>Hello again!</Text>
-      </View>
-      <View style={{flex: 3, backgroundColor: 'powderblue'}}>
-        <Button title='Tensorflow.js'/>
-      </View>
-    </ScrollView>
+    </View>
   );
 }
 
@@ -20,8 +16,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'steelblue'
+    justifyContent: 'space-between',
+    backgroundColor: 'steelblue',
+    // flexDirection: 'row'
   },
 });
 
@@ -48,4 +45,18 @@ const Cafe = () => {
   )
 }
 
-export default Cafe;
+const GoalApp = () => {
+  return (
+    <View style={styles.container}>
+      <View>
+        <TextInput placeholder='Your Dail y Profit'/>
+        <Button title='Add Win'/>
+      </View>
+      <View>
+        <Text style={{backgroundColor: 'white'}}>Tell us about your win/loss ratio</Text>
+      </View>
+    </View>
+  )
+}
+
+export default GoalApp;
