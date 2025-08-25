@@ -12,16 +12,6 @@ const App = () => {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    backgroundColor: 'steelblue',
-    // flexDirection: 'row'
-  },
-});
-
 const Cat = (props) => {
   return(
     <View>
@@ -49,7 +39,7 @@ const GoalApp = () => {
   return (
     <View style={styles.container}>
       <View>
-        <TextInput placeholder='Your Dail y Profit'/>
+        <TextInput style={{borderWidth: 1, backgroundColor: 'skyblue'}}placeholder='Your Daily Profit'/>
         <Button title='Add Win'/>
       </View>
       <View>
@@ -58,5 +48,16 @@ const GoalApp = () => {
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 10,
+    alignItems: 'center',
+    // justifyContent: 'space-between',
+    backgroundColor: 'steelblue',
+    // flexDirection: 'row'
+  },
+});
 
 export default GoalApp;
