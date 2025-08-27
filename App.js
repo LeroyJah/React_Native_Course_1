@@ -38,9 +38,9 @@ const Cafe = () => {
 const GoalApp = () => {
   return (
     <View style={styles.container}>
-      <View>
+      <View style={styles.inputContainer}>
         <TextInput style={{borderWidth: 1, backgroundColor: 'skyblue'}}placeholder='Your Daily Profit'/>
-        <Button title='Add Win'/>
+        <Button color='#841584' title='Add Win'/>
       </View>
       <View>
         <Text style={{backgroundColor: 'white'}}>Tell us about your win/loss ratio</Text>
@@ -52,12 +52,17 @@ const GoalApp = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 10,
+    padding: 50,
     alignItems: 'center',
     // justifyContent: 'space-between',
     backgroundColor: 'steelblue',
     // flexDirection: 'row'
-  },
+  }, inputContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  }, submitButton: {
+    color: '#841584'
+  }
 });
 
 export default GoalApp;
