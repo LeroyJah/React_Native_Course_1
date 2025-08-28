@@ -40,7 +40,11 @@ const GoalApp = () => {
     <View style={styles.container}>
       <View style={styles.inputContainer}>
         <TextInput style={{borderWidth: 1, backgroundColor: 'skyblue'}}placeholder='Your Daily Profit'/>
-        <Button color='#841584' title='Add Win'/>
+        <Button 
+          onPress={() => Alert.alert('testing out JavaScript alert API')}
+          color='#841584'
+          title='Add Win'
+         />
       </View>
       <View>
         <Text style={{backgroundColor: 'white'}}>Tell us about your win/loss ratio</Text>
