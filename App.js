@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View, Button, ScrollView, Image, TextInput } from 'react-native';
 
+const Separator = () => <View style={styles.separator} />;
+
 const App = () => {
   return (
     <View style={styles.container}>
@@ -39,14 +41,14 @@ const GoalApp = () => {
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
-        <TextInput style={{borderWidth: 1, backgroundColor: 'skyblue'}}placeholder='Your Daily Profit'/>
+        <TextInput style={{borderWidth: 1, backgroundColor: 'skyblue'}} placeholder='Your Daily Profit'/>
         <Button 
           onPress={() => Alert.alert('testing out JavaScript alert API')}
           color='#841584'
           title='Add Win'
          />
       </View>
-      <View>
+      <View style={styles.separator}>
         <Text style={{backgroundColor: 'white'}}>Tell us about your win/loss ratio</Text>
       </View>
     </View>
@@ -66,7 +68,12 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between'
   }, submitButton: {
     color: '#841584'
-  }
+  }, separator: {
+    marginVertical: 8,
+    padding: 5,
+    borderBottomColor: '#FFA500',
+    borderBottomWidth: 1,
+  },
 });
 
 export default GoalApp;
