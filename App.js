@@ -41,15 +41,16 @@ const GoalApp = () => {
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
-        <TextInput style={{borderWidth: 1, backgroundColor: 'skyblue'}} placeholder='Your Daily Profit'/>
+        <TextInput style={{backgroundColor: 'white',padding: 5}} placeholder='Your Daily Profit'/>
         <Button 
           onPress={() => Alert.alert('testing out JavaScript alert API')}
           color='#841584'
           title='Add Win'
          />
       </View>
-      <View style={styles.separator}>
-        <Text style={{backgroundColor: 'white'}}>Tell us about your win/loss ratio</Text>
+      <View>
+        <Text style={{backgroundColor: 'skyblue',padding: 5,borderRadius: 5}}>Tell us about your win/loss ratio</Text>
+        <Separator/>
       </View>
     </View>
   )
@@ -64,14 +65,14 @@ const styles = StyleSheet.create({
     backgroundColor: 'steelblue',
     // flexDirection: 'row'
   }, inputContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between'
+    flexDirection: 'column',
+    // justifyContent: 'space-between',
   }, submitButton: {
     color: '#841584'
   }, separator: {
     marginVertical: 8,
     padding: 5,
-    borderBottomColor: '#FFA500',
+    borderBottomColor: '#841584',
     borderBottomWidth: 1,
   },
 });
