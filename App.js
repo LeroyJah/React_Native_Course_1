@@ -49,7 +49,7 @@ const GoalApp = () => {
          />
       </View>
       <View>
-        <Text style={{backgroundColor: 'skyblue',padding: 5,borderRadius: 5}}>Tell us about your win/loss ratio</Text>
+        <Text style={{backgroundColor: 'skyblue',padding: 5, margin: 5,borderRadius: 5}}>Tell us about your win/loss ratio</Text>
         <Separator/>
       </View>
     </View>
@@ -59,14 +59,14 @@ const GoalApp = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 50,
+    padding: 20,
     alignItems: 'center',
     // justifyContent: 'space-between',
     backgroundColor: 'steelblue',
     // flexDirection: 'row'
   }, inputContainer: {
-    flexDirection: 'column',
-    // justifyContent: 'space-between',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   }, submitButton: {
     color: '#841584'
   }, separator: {
