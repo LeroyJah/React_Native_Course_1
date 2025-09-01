@@ -65,8 +65,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'steelblue',
     // flexDirection: 'row'
   }, inputContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: 'row-reverse',
+    // justifyContent: 'space-between',
   }, submitButton: {
     color: '#841584'
   }, separator: {
