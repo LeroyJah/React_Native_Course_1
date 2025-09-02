@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, ScrollView, Image, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView, Image, TextInput, Alert } from 'react-native';
 
 const Separator = () => <View style={styles.separator} />;
 
