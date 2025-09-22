@@ -1,3 +1,4 @@
+import { fetchAPI } from './http.js';
 import { StyleSheet, Text, View, Button, ScrollView, Image, TextInput, Alert } from 'react-native';
 
 const Separator = () => <View style={styles.separator} />;
@@ -43,7 +44,7 @@ const GoalApp = () => {
       <View style={styles.inputContainer}>
         <TextInput style={{backgroundColor: 'white',padding: 5}} placeholder='Your Daily Profit'/>
         <Button 
-          onPress={() => Alert.alert('testing out JavaScript alert API')}
+          onPress={() => Alert.alert('Greetings Master Jah🥴')}
           color='#841584'
           title='Add Win'
          />
